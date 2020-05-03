@@ -7,7 +7,7 @@ class JustUser(models.Model):
 	lname = models.CharField(max_length = 30,verbose_name = 'Last Name')
 	email = models.EmailField()
 	mobile = PhoneNumberField()
-	college = models.CharField(max_length = 30,verbose_name = 'College/Organization')
+	college = models.CharField(max_length = 100,verbose_name = 'College/Organization')
 	profession = models.CharField(max_length = 30,verbose_name = 'Profession')
 
 	def __str__(self):
